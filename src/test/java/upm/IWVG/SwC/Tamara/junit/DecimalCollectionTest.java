@@ -12,7 +12,7 @@ public class DecimalCollectionTest extends TestCase {
 	private DecimalCollection dc;
 
     @Before
-    public void before() {
+    public void setUp() {
         this.dc = new DecimalCollection();
         this.dc.add(2.0);
         this.dc.add(-1.0);

@@ -12,7 +12,7 @@ public class FractionTest extends TestCase {
 	 private Fraction fr;
 		
 	    @Before
-	    public void before() {
+	    public void setUp() {
 	        fr = new Fraction(25, 5);
 	    }
 		

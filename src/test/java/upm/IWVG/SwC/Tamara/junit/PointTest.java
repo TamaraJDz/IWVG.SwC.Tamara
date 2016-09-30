@@ -12,7 +12,7 @@ public class PointTest extends TestCase {
 	private Point pt;
 
     @Before
-    public void before() {
+    public void setUp() {
         pt = new Point(2, 3);
     }
 
