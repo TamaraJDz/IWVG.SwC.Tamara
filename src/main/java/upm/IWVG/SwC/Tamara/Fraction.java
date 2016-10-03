@@ -72,4 +72,14 @@ public class Fraction {
     	return (endproduct == mediaproduct);
     }
     
+    public void sumFraction(Fraction fraction){
+    	this.numerator=this.getNumerator()*fraction.getDenominator()+fraction.getNumerator()*this.getDenominator();
+    	this.denominator=this.getDenominator()*fraction.getDenominator();
+    }
+    
+    public void subtractFraction(Fraction fraction){
+    	this.numerator=this.getNumerator()*fraction.getDenominator()-fraction.getNumerator()*this.getDenominator();
+    	this.denominator=this.getDenominator()*fraction.getDenominator();
+    }
+    
 }

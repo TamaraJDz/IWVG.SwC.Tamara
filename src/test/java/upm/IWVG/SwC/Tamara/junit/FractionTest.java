@@ -58,5 +58,16 @@ public class FractionTest extends TestCase {
 	    	Fraction noteqfraction = new Fraction(10,3);
 	    	assertFalse(fr.isEquivalentFraction(noteqfraction));
 	    }
+	    
+	    @Test
+	    public final void testSumFraction(){
+	    	fr.sumFraction(new Fraction(1,2));
+	    	assertEquals(5.5,fr.decimal(), 10e-5);
+	    }
 
+	    @Test
+	    public final void testSubtractFraction(){
+	    	fr.subtractFraction(new Fraction(1,2));
+	    	assertEquals(4.5,fr.decimal(), 10e-5);
+	    }
 }
