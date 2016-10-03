@@ -32,7 +32,7 @@ private User u;
 
     @Test
     public void testFullName() {
-        assertEquals("Tamara Jimenez", u.fullName());
+        assertEquals("Tamara Jimenez", u.getFullName());
     }
 
     @Test
