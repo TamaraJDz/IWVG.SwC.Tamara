@@ -65,4 +65,11 @@ public class Fraction {
     	return this.numerator > this.denominator;
     }
     
+    public boolean isEquivalentFraction(Fraction fraction) {
+    	/* Cross product method */
+    	int endproduct = numerator * fraction.getDenominator();
+    	int mediaproduct =	denominator * fraction.getNumerator();	
+    	return (endproduct == mediaproduct);
+    }
+    
 }

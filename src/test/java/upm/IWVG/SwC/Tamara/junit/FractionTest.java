@@ -50,5 +50,13 @@ public class FractionTest extends TestCase {
 			fr = new Fraction(3, 4);
 			assertFalse(fr.isImproper());
 		}
+		
+	    @Test
+	    public final void testIsEquivalentFraction() {
+	    	Fraction eqfraction = new Fraction(10,2);
+	    	assertTrue(fr.isEquivalentFraction(eqfraction));
+	    	Fraction noteqfraction = new Fraction(10,3);
+	    	assertFalse(fr.isEquivalentFraction(noteqfraction));
+	    }
 
 }
