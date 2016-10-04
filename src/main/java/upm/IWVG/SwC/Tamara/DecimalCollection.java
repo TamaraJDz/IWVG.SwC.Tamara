@@ -37,4 +37,12 @@ public class DecimalCollection {
         return higher;
     }
 
+    public double average() {
+    	double total = 0.00;
+    	for(double item : this.collection) {
+    		total += item;
+    	}
+    	return total / this.collection.size();
+    }
+    
 }
