@@ -1,5 +1,5 @@
 @echo off
-set workspace=C:\MIW\workspace\Tamara.Jimenez.Diaz.SVC
+set workspace=C:\MIW\workspace\IWVG.SwC.Tamara
 set JAVA_HOME=C:\Program Files\Java\jdk1.8.0_101
 set M2_HOME=C:\MIW\apache-maven-3.3.9
 set PATH=%PATH%;%JAVA_HOME%\bin;%M2_HOME%\bin

@@ -1,5 +1,5 @@
 @echo off
-set workspace=C:\MIW\workspace\Tamara.Jimenez.Diaz.SVC
+set workspace=C:\MIW\workspace\IWVG.SwC.Tamara
 ::Las variables de entorno se pueden configurar directamente en Windows cuando se tienen los permisos necesarios
 set JAVA_HOME=C:\Program Files\Java\jdk1.8.0_101
 set M2_HOME=C:\MIW\apache-maven-3.3.9
