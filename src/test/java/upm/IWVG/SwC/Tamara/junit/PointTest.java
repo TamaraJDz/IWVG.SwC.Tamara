@@ -35,6 +35,20 @@ public class PointTest extends TestCase {
         assertEquals(0, pt.getX());
         assertEquals(0, pt.getY());
     }
+    
+    @Test
+    public void testSetX() {
+        pt = new Point(4, 8);
+        pt.setX(12);
+        assertEquals(12, pt.getX());
+    }
+    
+    @Test
+    public void testSetY() {
+        pt = new Point(4, 8);
+        pt.setY(7);
+        assertEquals(7, pt.getY());
+    }
 
     @Test
     public void testModulo() {

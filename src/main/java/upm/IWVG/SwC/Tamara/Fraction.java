@@ -61,4 +61,25 @@ public class Fraction {
         return denominator;
     }
     
+    public boolean isImproper() {
+    	return this.numerator > this.denominator;
+    }
+    
+    public boolean isEquivalentFraction(Fraction fraction) {
+    	/* Cross product method */
+    	int endproduct = numerator * fraction.getDenominator();
+    	int mediaproduct =	denominator * fraction.getNumerator();	
+    	return (endproduct == mediaproduct);
+    }
+    
+    public void sumFraction(Fraction fraction){
+    	this.numerator=this.getNumerator()*fraction.getDenominator()+fraction.getNumerator()*this.getDenominator();
+    	this.denominator=this.getDenominator()*fraction.getDenominator();
+    }
+    
+    public void subtractFraction(Fraction fraction){
+    	this.numerator=this.getNumerator()*fraction.getDenominator()-fraction.getNumerator()*this.getDenominator();
+    	this.denominator=this.getDenominator()*fraction.getDenominator();
+    }
+    
 }

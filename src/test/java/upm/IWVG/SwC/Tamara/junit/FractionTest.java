@@ -43,5 +43,31 @@ public class FractionTest extends TestCase {
 		public void testGetDenominator() {
 			assertEquals(5, fr.getDenominator());
 		}
+		
+		@Test
+		public void testIsImproper() {
+			assertTrue(fr.isImproper());
+			fr = new Fraction(3, 4);
+			assertFalse(fr.isImproper());
+		}
+		
+	    @Test
+	    public final void testIsEquivalentFraction() {
+	    	Fraction eqfraction = new Fraction(10,2);
+	    	assertTrue(fr.isEquivalentFraction(eqfraction));
+	    	Fraction noteqfraction = new Fraction(10,3);
+	    	assertFalse(fr.isEquivalentFraction(noteqfraction));
+	    }
+	    
+	    @Test
+	    public final void testSumFraction(){
+	    	fr.sumFraction(new Fraction(1,2));
+	    	assertEquals(5.5,fr.decimal(), 10e-5);
+	    }
 
+	    @Test
+	    public final void testSubtractFraction(){
+	    	fr.subtractFraction(new Fraction(1,2));
+	    	assertEquals(4.5,fr.decimal(), 10e-5);
+	    }
 }

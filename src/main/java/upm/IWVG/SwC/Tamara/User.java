@@ -7,11 +7,14 @@ public class User {
     private String name;
 
     private String familyName;
+    
+    private String fullName;
 
     public User(int number, String name, String familyName) {
         this.number = number;
         this.name = this.format(name);
         this.familyName = this.format(familyName);
+        this.setFullName();
     }
     
     private String format(String string) {
@@ -19,8 +22,12 @@ public class User {
         return string.substring(0, 1).toUpperCase() + string.substring(1).toLowerCase();
     }
 
-    public String fullName() {
-        return this.name + " " + this.familyName;
+    private void setFullName() {
+        this.fullName= this.name + " " + this.familyName;
+    }
+    
+    public String getFullName(){
+    	return this.fullName;
     }
 
     public String initials() {
